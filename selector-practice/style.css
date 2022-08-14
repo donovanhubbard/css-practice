@@ -1,0 +1,11 @@
+.one {
+    color: blueviolet;
+}
+
+.two {
+    font-style: italic;
+}
+
+.one.two {
+    background-color: chocolate;
+}

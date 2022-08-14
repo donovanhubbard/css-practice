@@ -1,0 +1,17 @@
+.one {
+    border-style: dotted;
+    border-width: 5px;
+    border-color: green;
+}
+.two {
+    border-style: solid;
+    border-width: medium;
+    border-color: goldenrod;
+    border-radius: 5px;
+}
+.three {
+    border-style: inset;
+    border-width: thick;
+    border-color: crimson;
+    border-radius: 40px;
+}

@@ -1,0 +1,11 @@
+div {
+    margin: 30px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: red;
+    padding: 30px;
+    width: 100px;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-offset: 5px;
+}
