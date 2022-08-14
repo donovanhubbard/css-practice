@@ -141,6 +141,27 @@ There are five possible position values:
 # Flexbox
 
 
+# Interesting HTML tags I didn't know about
+
+**main** - strictly informative to mark the main, unique content of the page
+**navbar** - way to group links, good for screen readers to skip
+**header**
+
+# Tailwind
+```bash
+npm install -D tailwindcss
+
+npx tailwindcss init
+```
+
+You create a css src file and then use tailwind to convert that to your public file.
+
+```bash
+tailwindcss build src/styles.css -o public/styles.css
+```
+By default tailwind strips all default browser styles out of everything.
+
+
 
 # Questions:
 What is 
