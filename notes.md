@@ -140,12 +140,73 @@ There are five possible position values:
 
 # Flexbox
 
+For displaying things in one direction. This can be top-down, vica-versa, or side to side.
+
+# Grid
+
+Layout along with flexbox, and float.
+
+**grid container** the root element which has `display: grid` applied. This is the parent of all the grid items.
+
+the <div class="container"> is the container
+
+```html
+<div class="container">
+  <div class="item item-1"> </div>
+  <div class="item item-2"> </div>
+  <div class="item item-3"> </div>
+</div>
+```
+
+**grid item** - the children of the grid container.
+
+**grid line** - dividing line that makes the structure of the grid
+
+**grid cell** - the area inbetween grid lines
+
+**grid track** - either the column or row of the grid
+
+**grid area** - multiple, contigous grid cells
+
+**grid-template-columns** - determines the grid's column width
+**grid-template-rows** - determines the grid's row width
+
+You can also assign arbitrary names to the tracks
+
+```css
+.container {
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+```
+
+## positioning
+These four properties tell where in the grid they should be displayed
+```css
+.item-a {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
+
+
+```
+
+
+
+
 
 # Interesting HTML tags I didn't know about
 
 **main** - strictly informative to mark the main, unique content of the page
 **navbar** - way to group links, good for screen readers to skip
 **header**
+**section**
+
+# Interesting CSS properties
+
+`box-sizing: border-box` means that padding and border are included in the size calculation. By default they are not.
 
 # Tailwind
 ```bash
@@ -162,6 +223,15 @@ tailwindcss build src/styles.css -o public/styles.css
 By default tailwind strips all default browser styles out of everything.
 
 
+# Tricks and tips
+
+In vscode if you create a new html file and enter `!` and hit enter, it will populate all the html boilerplate
+
+In vscode if you are working on an html document and you want a new div with a given classname type `.<classname>` and hit enter and it will make the tag for you.
+
+The `@import` command can import styles from other css sheets. However, the import statements MUST be the first statements in your style sheet.
+
+If you have a flexbox that is in `flex-direction: row`, you can make it responsive by switching it to `flex-direction: column`. Alternatively you can change `display:flex` to `display: block`.
 
 # Questions:
 What is 
